@@ -49,15 +49,25 @@ $ cat $HOME/.oci/terraform-rsa-public.pem
 
 #create terraform variables
 
-export TF_VAR_tenancy_ocid=<#YOUR TENANCY OCID#>
+$ export TF_VAR_tenancy_ocid=<#YOUR TENANCY OCID#>
 
-export TF_VAR_user_ocid=<#YOUR USER OCID#>
+$ export TF_VAR_user_ocid=<#YOUR USER OCID#>
 
-export TF_VAR_private_key_path=$HOME/.oci/terraform-rsa.pem
+$ export TF_VAR_private_key_path=$HOME/.oci/terraform-rsa.pem
 
-export TF_VAR_region=<#NAME REGION for example: us-ashburn-1 #>
+$ export TF_VAR_region=<#NAME REGION for example: us-ashburn-1 #>
 
-export TF_VAR_fingerprint=<#YOUR FINGERPRINT of the api key created#>
+$ export TF_VAR_fingerprint=<#YOUR FINGERPRINT of the api key created#>
+
+(instance keys)
+
+$export TF_VAR_ssh_public_key=$(cat $HOME/id_rsa.pub) #path of your keys
+
+$export TF_VAR_ssh_private_key=$(cat $HOME/id_rsa)
+
+$export TF_VAR_ssh_public2_key=$(cat $HOME/id_rsa2.pub)
+
+$export TF_VAR_ssh_private2_key=$(cat $HOME/id_rsa2)
 
 
 
@@ -74,4 +84,10 @@ $ terraform init
 #rerun this command to reinitialize your working directory. If you forget, other
 #commands will detect it and remind you to do so if necessary.
 
+$ terraform plan
 
+$ terraform apply
+
+#confirm "yes"
+
+#;)
