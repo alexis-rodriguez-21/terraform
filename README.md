@@ -1,5 +1,7 @@
 # Terraform
+
 # Creacion de recursos con Terraform
+
 # Cada script esta declarado para un tipo de recursos, en algunos casos mas de un recursos del mismo tipo y se omiten pasos como la creacion de llaves publicas para algunos recursos.
 
 # Get Started
