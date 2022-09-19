@@ -5,6 +5,8 @@ variable "private_key_path" {}
 variable "region" {}
 variable "ssh_public_key" {}
 variable "ssh_private_key" {}
+variable "ssh_public2_key" {}
+variable "ssh_private2_key" {}
 
 provider "oci" {
    tenancy_ocid = "${var.tenancy_ocid}"
