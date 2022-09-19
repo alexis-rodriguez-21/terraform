@@ -77,20 +77,20 @@ $ export TF_VAR_ssh_private2_key=$(cat $HOME/id_rsa2)
 $ terraform init
 
 # output
-# Terraform has been successfully initialized!
+- Terraform has been successfully initialized!
 
-# You may now begin working with Terraform. Try running "terraform plan" to see
-# any changes that are required for your infrastructure. All Terraform commands
-# should now work.
+- You may now begin working with Terraform. Try running "terraform plan" to see
+- any changes that are required for your infrastructure. All Terraform commands
+- should now work.
 
-# If you ever set or change modules or backend configuration for Terraform,
-# rerun this command to reinitialize your working directory. If you forget, other
-# commands will detect it and remind you to do so if necessary.
+- If you ever set or change modules or backend configuration for Terraform,
+- rerun this command to reinitialize your working directory. If you forget, other
+- commands will detect it and remind you to do so if necessary.
 
 $ terraform plan
 
 $ terraform apply
 
-# confirm "yes"
+- confirm "yes"
 
-# ;)
+- ;)
