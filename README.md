@@ -1,16 +1,16 @@
 # Terraform
 
-# Creacion de recursos con Terraform
+#Creacion de recursos con Terraform
 
-# Cada script esta declarado para un tipo de recursos, en algunos casos mas de un recursos del mismo tipo y se omiten pasos como la creacion de llaves publicas para algunos recursos.
+#Cada script esta declarado para un tipo de recursos, en algunos casos mas de un recursos del mismo tipo y se omiten pasos como la creacion de llaves publicas para algunos recursos.
 
-# Get Started
+#Get Started
 
-# Oracle Linux 7.9
+#Oracle Linux 7.9
 
-# Pakage arm64
+#Pakage arm64
 
-# take the link from the terraform page
+#take the link from the terraform page
 
 $ wget https://releases.hashicorp.com/terraform/1.2.9/terraform_1.2.9_linux_arm64.zip
 
@@ -41,13 +41,13 @@ $ openssl rsa -pubout -in $HOME/.oci/terraform-rsa.pem -out $HOME/.oci/terraform
 
 $ cat $HOME/.oci/terraform-rsa-public.pem
 
-# copy public key
+#copy public key
 
-# add api key in oci
+#add api key in oci
 
-# paste public key
+#paste public key
 
-# create.
+#create
 
 
 # create terraform variables
