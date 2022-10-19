@@ -13,12 +13,9 @@ resource "null_resource" "remote-exec" {
 
   provisioner "remote-exec" {
     inline = [
-          "wget https://sinesis.us/cloud/12c-prerequisitos.sh",
-          "wget https://sinesis.us/cloud/test.sh",
-          "wget https://sinesis.us/cloud/exec.sh",
           "sudo chmod +x /home/opc/*.sh",
           "sudo /bin/bash /home/opc/12c-prerequisitos",
-	    "export PUBLIC_IP=${oci_core_instance.instance_terraform.public_ip}",
+	  "export PUBLIC_IP=${oci_core_instance.instance_terraform.public_ip}",
           "echo $PUBLIC_IP > /home/opc/public_ip",
           "hostname > /home/opc/hostname",
           "sudo /bin/bash /home/opc/exec.sh",
@@ -42,12 +39,9 @@ resource "null_resource" "remote-exec2" {
 
   provisioner "remote-exec" {
     inline = [
-          "wget https://sinesis.us/cloud/12c-prerequisitos.sh",
-          "wget https://sinesis.us/cloud/test.sh",
-          "wget https://sinesis.us/cloud/exec.sh",
           "sudo chmod +x /home/opc/*.sh",
           "sudo /bin/bash /home/opc/12c-prerequisitos",
-	    "export PUBLIC_IP=${oci_core_instance.instance_terraform2.public_ip}",
+	  "export PUBLIC_IP=${oci_core_instance.instance_terraform2.public_ip}",
           "echo $PUBLIC_IP > /home/opc/public_ip",
           "hostname > /home/opc/hostname",
           "sudo /bin/bash /home/opc/exec.sh",
